@@ -6,6 +6,9 @@ let tomato: number = 3;
 let speed: string = 'fast';
 let hasName: boolean = false;
 
+// speed.fdgfgfgfdgfdgfdg
+speed.toUpperCase();
+
 let nothingMuch: null = null;
 let nothing: undefined = undefined;
 
@@ -39,3 +42,5 @@ const logNumber: (i: number) => void = (i: number) => {
 const json = '{"x": 10, "y": 20}';
 const coordinates = JSON.parse(json);
 console.log(coordinates); // {x: 10, y: 20};
+
+// coordinates.dsfdfdfdsfdsfds
