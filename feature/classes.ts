@@ -15,16 +15,19 @@ class Vehicle {
   }
 }
 
-// class Car extends Vehicle {
-//   private drive(): void {
-//     console.log('vroom');
-//   }
+class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+  private drive(): void {
+    console.log('vroom');
+  }
 
-//   startDrivingProcess(): void {
-//     this.drive();
-//     this.honk();
-//   }
-// }
+  startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
+}
 
 const vehicle = new Vehicle('orange');
 console.log(vehicle.color)
@@ -32,6 +35,6 @@ console.log(vehicle.color)
 // Property 'honk' is protected and only accessible within class 'Vehicle' and its subclasses.
 // vehicle.honk();
 
-// const car = new Car();
-// car.startDrivingProcess();
+const car = new Car(4, 'red');
+car.startDrivingProcess();
 // car.honk();
